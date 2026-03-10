@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правильное питание — здоровый образ жизни</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ШАПКА САЙТА -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Здоровое Питание</h1>
+                <p class="logo-sub">Советы, планы и мотивация</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" onclick="scrollToSection('home')">Главная</a></li>
+                    <li><a href="#about" onclick="scrollToSection('about')">О проекте</a></li>
+                    <li><a href="#benefits" onclick="scrollToSection('benefits')">Преимущества</a></li>
+                    <li><a href="#tips" onclick="scrollToSection('tips')">Советы</a></li>
+                    <li><a href="#menu" onclick="scrollToSection('menu')">План на неделю</a></li>
+                </ul>
+            </nav>
+            <button class="btn-header" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ БАННЕР -->
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <h2>Начни заботиться о себе уже сегодня</h2>
+            <p>Построим здоровые привычки вместе — простые шаги к лучшему самочувствию, энергии и уверенному будущему.</p>
+            <button class="btn btn-banner" onclick="scrollToSection('benefits')">Узнать больше</button>
+        </div>
+        <div class="banner-image">
+            <img src="images/banner.jpg" alt="Здоровое питание">
+        </div>
+    </section>
+
+    <!-- О ПРОЕКТЕ -->
+    <section class="section section--light" id="about">
+        <div class="main-wrapper">
+            <h2 class="section-title">О проекте</h2>
+            <p>Это одностраничный проект, посвященный популяризации правильного питания. Здесь собраны проверенные советы, простые рецепты и наглядная информация, которая поможет вам сформировать полезные привычки без стресса.</p>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Простые правила</h3>
+                    <p>Питайтесь разнообразно, ориентируйтесь на натуральные продукты и не забывайте пить воду. Маленькие шаги каждый день дают большой результат.</p>
+                </div>
+                <div class="card">
+                    <h3>Гибкий подход</h3>
+                    <p>Здоровое питание — это не диета, а образ жизни. Мы предлагаем адаптировать рекомендации под ваш график, бюджет и вкусы.</p>
+                </div>
+                <div class="card">
+                    <h3>Поддержка и мотивация</h3>
+                    <p>Полезные подсказки, идеи на каждый день и понятные факты о том, как питание влияет на энергию, сон и настроение.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section section--dark" id="benefits">
+        <div class="main-wrapper">
+            <h2 class="section-title">Почему важно начать сейчас</h2>
+            <p>Правильное питание дает не только пользу для тела, но и помогает мыслить яснее, чувствовать себя лучше и улучшать качество жизни.</p>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Энергия и концентрация</h3>
+                    <p>Стабильный уровень сахара в крови и качественные ингредиенты помогают оставаться бодрым и собранным.</p>
+                </div>
+                <div class="card">
+                    <h3>Здоровье и иммунитет</h3>
+                    <p>Витамины, минералы и антиоксиданты из натуральных продуктов поддерживают защитные силы организма.</p>
+                </div>
+                <div class="card">
+                    <h3>Долгосрочное благополучие</h3>
+                    <p>Правильные привычки питания помогают поддерживать нормальный вес, здоровье сердца и крепкие кости.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СОВЕТЫ -->
+    <section class="section section--light" id="tips">
+        <div class="main-wrapper">
+            <h2 class="section-title">Практические советы</h2>
+            <div class="section-cards">
+                <div class="card">
+                    <h3>Планируйте приемы пищи</h3>
+                    <p>Составьте простой план на неделю: это сократит соблазны и поможет экономить время.</p>
+                </div>
+                <div class="card">
+                    <h3>Добавляйте овощи</h3>
+                    <p>Сделайте тарелку ярче: овощи и зелень добавляют витаминов и улучшают вкус.</p>
+                </div>
+                <div class="card">
+                    <h3>Пейте достаточно воды</h3>
+                    <p>Вода помогает контролировать аппетит, выводит токсины и поддерживает обмен веществ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- МЕНЮ НА НЕДЕЛЮ -->
+    <section class="section section--dark" id="menu">
+        <div class="main-wrapper">
+            <h2 class="section-title">План питания на неделю</h2>
+            <p>Небольшой шаблон, чтобы планирование стало проще. Вы можете адаптировать его под свои цели и график.</p>
+            <div class="menu-grid">
+                <div class="menu-day">
+                    <h3>Понедельник</h3>
+                    <ul>
+                        <li>Завтрак: смузи с бананом</li>
+                        <li>Обед: куриный салат</li>
+                        <li>Ужин: запеченная рыба с овощами</li>
+                    </ul>
+                </div>
+                <div class="menu-day">
+                    <h3>Среда</h3>
+                    <ul>
+                        <li>Завтрак: омлет с зеленью</li>
+                        <li>Обед: овощной суп</li>
+                        <li>Ужин: киноа с овощами</li>
+                    </ul>
+                </div>
+                <div class="menu-day">
+                    <h3>Пятница</h3>
+                    <ul>
+                        <li>Завтрак: греческий йогурт с ягодами</li>
+                        <li>Обед: паста из твердых сортов</li>
+                        <li>Ужин: запеченные овощи и сэндвич</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>О проекте</h5>
+                <p>Здесь вы найдете полезные привычки, простые рецепты и вдохновение для перехода на здоровое питание.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Быстрые ссылки</h5>
+                <ul>
+                    <li><a href="#home" onclick="scrollToSection('home')">Главная</a></li>
+                    <li><a href="#benefits" onclick="scrollToSection('benefits')">Преимущества</a></li>
+                    <li><a href="#menu" onclick="scrollToSection('menu')">План питания</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Следите за нами</h5>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Здоровое Питание. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
